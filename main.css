@@ -1,0 +1,12 @@
+/* SCSS uses brackets and semi-colons */
+/* USE THE COMMAND 'sass --watch main.scss' TO COMPILE SCSS TO CSS */
+.wrapper {
+  width: 200px;
+  height: 200px;
+  background-color: #e84610; }
+  .wrapper p {
+    font-size: 30px;
+    /* The p tag is nested in the .wrapper brackets and also uses it's own for its values */
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
