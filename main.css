@@ -1,12 +1,43 @@
-/* SCSS uses brackets and semi-colons */
-/* USE THE COMMAND 'sass --watch main.scss' TO COMPILE SCSS TO CSS */
-.wrapper {
-  width: 200px;
-  height: 200px;
-  background-color: #e84610; }
-  .wrapper p {
-    font-size: 30px;
-    /* The p tag is nested in the .wrapper brackets and also uses it's own for its values */
-    color: #fff; }
+/* SCSS selectors have to target each nested class */
+/* Avoid the practice used in this example called 'deep nesting' */
+/* .wrapper {
+    .main {
+        .container {
+            .article {
+                .post {
+                    color: blue;
+                }
+            }
+        }
+    }
+} */
+/* Referencing parent elements, use the '&' symbol to show the .wrapper is the parent element */
+.wrapper .main {
+  width: 300px;
+  height: 300px;
+  background-color: yellow; }
+
+p {
+  font-family: open-sans;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* Placeholders should be used in code that you are intending to reuse */
+/* Now put the background properties into the div selectors */
+.div {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.container {
+  background-image: url("https://dummyimage.com/450x250/f00/fff"); }
+
+.article {
+  background-image: url("https://dummyimage.com/450x250/000/fff"); }
+
+.post {
+  background-image: url("https://dummyimage.com/450x250/ddd/fff"); }
 
 /*# sourceMappingURL=main.css.map */
